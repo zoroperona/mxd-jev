@@ -1,0 +1,4 @@
+# Reproducible runtime versions. Development dependencies are in pyproject.toml.
+numpy==2.5.3
+opencv-python==4.14.0.94
+mss==10.2.0

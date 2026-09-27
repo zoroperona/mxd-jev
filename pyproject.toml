@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mxd-jev"
+version = "0.1.0"
+description = "Calibrated Windows visual control and Jev decision prototype"
+requires-python = ">=3.11"
+dependencies = ["numpy>=2.0,<3", "opencv-python>=4.10,<5", "mss>=10,<11"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+
+[project.scripts]
+mxd-jev = "mxd_jev.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
